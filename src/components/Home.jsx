@@ -127,7 +127,7 @@ export default function Home({ access_token, id_token }) {
     if (role) {
       setHiddenData('тут могут быть данные');
     } else {
-      setHiddenData('тут могут быть данные обычного пользователя');
+      setHiddenData('тут могут быть данные для обычного пользователя');
     }
   };
 

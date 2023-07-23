@@ -12,19 +12,14 @@ button {
 }
 
 button:hover {
-  transform: scale(1, 1);
-}
-
-button:hover {
-  transform: scale(1.02);
+  transform: scale(1);
   border-color: rgb(62, 62, 116);
-  box-shadow: -1px 1px 0px 2px grey;
-  box-shadow: inset -2px -2px 0px -1px grey;
+  box-shadow: inset 0px 0px 4px 0px grey;
   backface-visibility: hidden;
 }
 
 button:active {
-  transform: scale(0.99);
+  transform: scale(0.9);
 }
 
 span {

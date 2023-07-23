@@ -1,23 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.main {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.btnContainer {
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-  gap: 40px;
-}
-
-button:hover {
-  transform: scale(1, 1);
-}
 
 button {
   border: 2px solid grey;
@@ -29,15 +12,44 @@ button {
 }
 
 button:hover {
+  transform: scale(1, 1);
+}
+
+button:hover {
   transform: scale(1.02);
   border-color: rgb(62, 62, 116);
   box-shadow: -1px 1px 0px 2px grey;
   box-shadow: inset -2px -2px 0px -1px grey;
   backface-visibility: hidden;
 }
+
 button:active {
   transform: scale(0.99);
 }
+
+span {
+  font-size: larger;
+}
+
+h6 {
+  font-size: small;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 40px;
+}
+
 .response {
   width: 700px;
   display: flex;
@@ -45,31 +57,30 @@ button:active {
   border: 1px solid black;
   box-shadow: -1px 1px 0px 2px grey;
 }
+
 .responseContainer {
   margin-left: 170px;
   width: 100%;
   height: 100%;
   font-size: x-small;
 }
-span {
-  font-size: larger;
-}
+
 .tableHeadWrapper {
   padding-left: 110px;
   padding-top: 60px;
 }
+
 .hiddenDtaContainer {
   padding-top: 20px;
   color: rgb(97, 43, 43);
 }
-h6 {
-  font-size: small;
-}
+
 .btnGetInfoContainer {
   margin-top: 20px;
   display: flex;
   gap: 20px;
 }
+
 @media screen and (max-width: 768px) {
   .main {
     flex-direction: column;

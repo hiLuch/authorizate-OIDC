@@ -18,7 +18,7 @@ export default function Home({ access_token, id_token }) {
   const [disableBtnAdmin, setDisableBtnAdmin] = useState(true);
   const [disableBtnLogout, setDisableBtnLogout] = useState(true);
   const [disableBtnAuthorizate, setDisableBtnAuthorizate] = useState(false);
- 
+
   useEffect(() => {
     if (access_token) {
       setDisableBtnAuthorizate(!disableBtnAuthorizate);
@@ -127,7 +127,7 @@ export default function Home({ access_token, id_token }) {
     if (role) {
       setHiddenData('тут могут быть данные');
     } else {
-      setHiddenData('тут могут быть данные для обычного пользователя');
+      setHiddenData('тут могут быть данные обычного пользователя');
     }
   };
 
@@ -207,7 +207,7 @@ export default function Home({ access_token, id_token }) {
               {!disableBtnUser || !disableBtnAdmin ? (
                 <p>Выберите доступного пользователя</p>
               ) : (
-                <p>Информация доступа только после авторизации</p>
+                <p>Информация доступа только авторизованым пользователям</p>
               )}
             </h6>
           )}
